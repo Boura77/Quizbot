@@ -32,7 +32,6 @@ if prompt := st.chat_input("Your answer?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    st.session_state.messages.append({"role": "user", "content": prompt})
     response = openai.ChatCompletion.create(
         model=MODEL,
         messages=st.session_state.messages,
