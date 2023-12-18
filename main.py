@@ -8,7 +8,7 @@ load_dotenv()
 OPENAI_API_KEY = "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"
 MODEL = "gpt-3.5-turbo"
 openai.api_key = OPENAI_API_KEY # for open ai
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY # for lang chain
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY 
 
 
 st.title("AGI Quiz Application")
